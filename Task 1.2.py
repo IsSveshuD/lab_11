@@ -9,6 +9,8 @@ def factorial(n):
         n -= 1
     return product
 
+
 if __name__ == '__main__':
     import timeit
-    print(timeit.timeit("factorial(10)", setup="from __main__ import factorial"))
+    print(timeit.timeit(
+        "factorial(10)", setup="from __main__ import factorial"))

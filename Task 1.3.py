@@ -8,6 +8,8 @@ def fib(n):
     else:
         return fib(n-2) + fib(n-1)
 
+
 if __name__ == '__main__':
     import timeit
-    print(timeit.timeit('fib(10)', setup="from __main__ import fib"))
+    print(timeit.timeit(
+        'fib(10)', setup="from __main__ import fib"))
